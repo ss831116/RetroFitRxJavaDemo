@@ -1,6 +1,7 @@
 package com.example.bernieshi.thirdpartdemoapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -83,8 +84,9 @@ public class MainActivity extends Activity {
                 getMovie(mParams, true);
                 break;
             case R.id.text:
-
-                break;
+                    Intent intent = new Intent(this,DataBindDemoActivity.class);
+                    startActivity(intent);
+                    break;
         }
     }
 
